@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :item do
-    name "NameString"
-    description "DescriptionText"
+    name "Tire Lever"
+    description "Two piece tire lever"
   end
 end
