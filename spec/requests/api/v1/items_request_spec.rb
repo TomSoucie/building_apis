@@ -5,7 +5,11 @@ describe "Items API" do
     create_list(:item, 3)
 
     get '/api/v1/items'
-
+    # binding.pry
     expect(response).to be_success
+
+    items = JSON.parse(response.body)
+
+    expect(items.count).to eq(3)
   end
 end
